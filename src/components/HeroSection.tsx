@@ -1,5 +1,5 @@
 import heroBg from "@/assets/hero-bg.jpg";
-import kasoLogo from "@/assets/kaso-logo.jpg";
+import kasoLogo from "@/assets/kaso-logo.png";
 import { Play } from "lucide-react";
 
 const HeroSection = () => {
