@@ -17,14 +17,24 @@ const timelineEvents = [
     description: "إصدار أول ألبوم رسمي",
   },
   {
+    year: "2021",
+    title: "Grow Up Freestyle",
+    description: "أول إصدار منفرد تحت اسم كاسو",
+  },
+  {
+    year: "2022",
+    title: "ألبوم Grow Up",
+    description: "ألبوم كامل بـ16 أغنية عن النمو الشخصي",
+  },
+  {
     year: "2024",
     title: "فيلم FEELINGS",
     description: "إطلاق فيلم موسيقي كامل",
   },
   {
     year: "2025",
-    title: "مهرجان الحمامات",
-    description: "عرض مباشر في المهرجان الدولي",
+    title: "ألبوم Mode Avion",
+    description: "إصدار ألبوم جديد مليان أغاني قوية",
   },
 ];
 
@@ -42,9 +52,10 @@ const AboutSection = () => {
           {/* Bio */}
           <div className="text-center mb-16">
             <p className="rtl-text text-xl md:text-2xl text-muted-foreground leading-relaxed">
-              عبد الكريم بوزيان، المعروف بـ<span className="text-primary font-bold"> كاسو</span>، 
-              مغني راب تونسي صنع اسمه من الشارع. كلماته تحكي قصص الواقع، 
-              ولحنه يلمس القلوب. من الأحياء الشعبية إلى المراحل الكبرى.
+              عبد الكريم بوزيان، اللي الكل يعرفو بـ<span className="text-primary font-bold"> Kaso</span>، 
+              ولد 7 جويلية 1995 في حي التضامن. مغني راب تونسي صنع اسمه من الشارع. 
+              كلماته تحكي قصص الواقع، ولحنه يلمس القلوب. من الأحياء الشعبية إلى المراحل الكبرى. 
+              بدأ الراب 2011، ومن 2018 صار نجم تونسي بأغاني من القلب.
             </p>
           </div>
 
@@ -69,17 +80,17 @@ const AboutSection = () => {
                     index % 2 === 0 ? "md:pr-12 md:text-right" : "md:pl-12"
                   }`}
                 >
-                  <div className="bg-card p-6 rounded-lg border border-border/50 hover:border-primary/50 transition-colors duration-300">
+                  <div className="bg-card p-6 rounded-lg border border-border/50 hover:border-primary hover:shadow-[0_0_20px_hsl(var(--primary)/0.3)] hover:scale-[1.02] transition-all duration-300">
                     <div className="flex items-center gap-3 mb-2">
                       <Calendar className="w-5 h-5 text-primary" />
-                      <span className="text-primary font-bold text-lg font-heading">
+                      <span className="text-primary font-bold text-2xl font-heading">
                         {event.year}
                       </span>
                     </div>
-                    <h3 className="rtl-text text-xl font-bold mb-2">
+                    <h3 className="rtl-text text-lg font-bold mb-2">
                       {event.title}
                     </h3>
-                    <p className="rtl-text text-muted-foreground">
+                    <p className="rtl-text text-sm text-muted-foreground">
                       {event.description}
                     </p>
                   </div>
