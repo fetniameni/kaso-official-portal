@@ -10,7 +10,7 @@ const timelineEvents = [
   {
     year: "2018",
     title: "الإنطلاقة الرسمية",
-    description: "تحول للاسم الفني كاسو",
+    description: "تحول للاسم الفني كازو",
   },
   {
     year: "2019",
