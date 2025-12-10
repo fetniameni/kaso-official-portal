@@ -29,10 +29,10 @@ const HeroSection = () => {
         muted
         loop
         playsInline
+        preload="auto"
         className="absolute inset-0 w-full h-full object-cover"
-        poster="/placeholder.svg"
       >
-        <source src="https://videos.pexels.com/video-files/855564/855564-720p.mp4" type="video/mp4" />
+        <source src="https://videos.pexels.com/video-files/3195394/3195394-sd.mp4" type="video/mp4" />
       </video>
       
       {/* Dark Overlay */}
@@ -48,12 +48,12 @@ const HeroSection = () => {
           <img 
             src={kasoLogo} 
             alt="Kaso - كاسو" 
-            className="w-64 md:w-80 h-auto mx-auto animate-pulse-glow-slow" 
+            className="w-[300px] h-auto mx-auto animate-pulse-glow-slow" 
           />
         </div>
 
         {/* Tagline */}
-        <h1 className="rtl-text text-2xl md:text-4xl lg:text-[42px] font-bold text-foreground leading-relaxed mb-10 animate-fade-up opacity-0 animation-delay-200">
+        <h1 dir="ltr" className="text-2xl md:text-4xl lg:text-[42px] font-bold text-foreground leading-relaxed mb-10 animate-fade-up opacity-0 animation-delay-200 text-center">
           كاسو: صوت الشوارع اللي يهزّ القلوب بكلمات من الواقع
         </h1>
 
