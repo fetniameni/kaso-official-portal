@@ -1,4 +1,5 @@
 import { Calendar } from "lucide-react";
+import { useEffect, useRef } from "react";
 
 const timelineEvents = [
   {
@@ -39,6 +40,25 @@ const timelineEvents = [
 ];
 
 const AboutSection = () => {
+  const timelineRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!timelineRef.current) return;
+      
+      const cards = timelineRef.current.querySelectorAll(".timeline-card");
+      cards.forEach((card) => {
+        const rect = card.getBoundingClientRect();
+        const scrollY = window.scrollY;
+        const offset = (rect.top - window.innerHeight / 2) * 0.05;
+        (card as HTMLElement).style.transform = `translateY(${offset}px)`;
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <section id="about" className="py-20 md:py-32 section-gradient">
       <div className="container mx-auto px-4">
@@ -60,7 +80,7 @@ const AboutSection = () => {
           </div>
 
           {/* Timeline */}
-          <div className="relative">
+          <div className="relative" ref={timelineRef}>
             {/* Vertical Line */}
             <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-border md:-translate-x-1/2" />
 
@@ -80,7 +100,7 @@ const AboutSection = () => {
                     index % 2 === 0 ? "md:pr-12 md:text-right" : "md:pl-12"
                   }`}
                 >
-                  <div className="bg-card p-6 rounded-lg border border-border/50 hover:border-primary hover:shadow-[0_0_20px_hsl(var(--primary)/0.3)] hover:scale-[1.02] transition-all duration-300">
+                  <div className="timeline-card bg-card p-6 rounded-lg border border-border/50 hover:border-primary hover:shadow-[0_0_20px_hsl(var(--primary)/0.3)] hover:scale-[1.02] transition-all duration-300">
                     <div className="flex items-center gap-3 mb-2">
                       <Calendar className="w-5 h-5 text-primary" />
                       <span className="text-primary font-bold text-2xl font-heading">

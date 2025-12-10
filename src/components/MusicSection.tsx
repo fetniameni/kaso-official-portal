@@ -74,10 +74,11 @@ const MusicSection = () => {
 
         {/* Music Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {tracks.map((track) => (
+          {tracks.map((track, index) => (
             <div
               key={track.id}
-              className="group relative bg-card rounded-xl overflow-hidden border border-border/50 hover:border-primary/50 transition-all duration-500 hover:shadow-[0_0_30px_hsl(24_100%_50%/0.2)]"
+              className="group relative bg-card rounded-xl overflow-hidden border border-border/50 hover:border-primary/50 transition-all duration-500 hover:shadow-[0_0_30px_hsl(24_100%_50%/0.2)] animate-fade-up opacity-0"
+              style={{ animationDelay: `${index * 100 + 200}ms`, animationFillMode: "forwards" }}
             >
               {/* Thumbnail */}
               <div className="relative aspect-video overflow-hidden">
@@ -95,7 +96,7 @@ const MusicSection = () => {
                   className="absolute inset-0 flex items-center justify-center"
                   aria-label={`Play ${track.title}`}
                 >
-                  <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:shadow-[0_0_30px_hsl(24_100%_50%/0.6)]">
+                  <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:shadow-[0_0_40px_hsl(24_100%_50%/0.8)]">
                     <Play className="w-7 h-7 text-primary-foreground fill-current ml-1" />
                   </div>
                 </button>
