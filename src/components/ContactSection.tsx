@@ -149,10 +149,10 @@ const ContactSection = () => {
       <footer className="border-t border-border/50 pt-8">
         <div className="container mx-auto px-4 text-center">
           <p className="rtl-text text-muted-foreground">
-            © 2025 KASO. All rights reserved.
+              .KASO. All rights reserved 2025 ©
           </p>
           <p className="rtl-text text-sm text-muted-foreground/60 mt-2">
-            Designed by AmeNy🧡
+            🧡 Designed by AmeNy
           </p>
         </div>
       </footer>
