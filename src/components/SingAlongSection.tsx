@@ -131,7 +131,7 @@ const SingAlongSection = () => {
         <div className="flex items-center justify-center gap-3 mb-4">
           <Music2 className="w-8 h-8 text-primary" />
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-center rtl-text">
-            غنّي مع كاسو
+            غنّي مع Kaso
           </h2>
         </div>
         <div className="w-24 h-1 bg-primary mx-auto mb-12" />
