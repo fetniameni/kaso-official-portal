@@ -102,12 +102,19 @@ const HeroSection = () => {
     }
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
+      {/* Background Image - Centered */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBg})` }}
+        style={{ 
+          backgroundImage: `url(${heroBg})`,
+          backgroundPosition: 'center center'
+        }}
       />
 
       {/* Dark Overlay */}
@@ -122,32 +129,35 @@ const HeroSection = () => {
       {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent z-20" />
 
+      {/* Top-Left Logo */}
+      <button
+        onClick={scrollToTop}
+        className="absolute top-6 left-6 z-40 cursor-pointer"
+      >
+        <img
+          src={kasoLogo}
+          alt="Kaso - كاسو"
+          className="w-[100px] md:w-[150px] h-auto animate-pulse-glow-slow"
+        />
+      </button>
+
       {/* Content */}
       <div className="relative z-30 text-center px-4 max-w-4xl mx-auto">
-        {/* Logo with Pulse Glow */}
-        <div className="mb-8 animate-fade-up">
-          <img
-            src={kasoLogo}
-            alt="Kaso - كاسو"
-            className="w-[300px] h-auto mx-auto animate-pulse-glow-slow"
-          />
-        </div>
-
         {/* Tagline */}
         <h1
           dir="ltr"
-          className="text-2xl md:text-4xl lg:text-[42px] font-bold text-foreground leading-relaxed mb-10 animate-fade-up opacity-0 animation-delay-200 text-center"
+          className="text-2xl md:text-4xl lg:text-[42px] font-bold text-foreground leading-relaxed mb-10 animate-fade-up text-center"
         >
-          كازو: صوت الشوارع اللي يهزّ القلوب بكلمات من الواقع
+          كاسو: صوت الشوارع اللي يهزّ القلوب بكلمات من الواقع
         </h1>
 
         {/* Play Button */}
         <button
           onClick={scrollToMusic}
-          className="group inline-flex items-center gap-3 bg-primary hover:bg-primary/80 text-primary-foreground px-10 py-4 rounded-full font-arabic text-xl font-bold transition-all duration-300 hover:scale-110 hover:shadow-[0_0_30px_hsl(24_100%_50%/0.5)] animate-fade-up opacity-0 animation-delay-400"
+          className="group inline-flex items-center gap-3 bg-primary hover:bg-primary/80 text-primary-foreground px-10 py-4 rounded-full font-arabic text-xl font-bold transition-all duration-300 hover:scale-110 hover:shadow-[0_0_30px_hsl(24_100%_50%/0.5)] animate-fade-up opacity-0 animation-delay-200"
         >
           <Play className="w-6 h-6 fill-current" />
-          <span>Play</span>
+          <span>بلاي</span>
         </button>
       </div>
 
