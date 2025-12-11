@@ -2,7 +2,6 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import TeamSection from "@/components/TeamSection";
-import PhotoAlbumSection from "@/components/PhotoAlbumSection";
 import MusicSection from "@/components/MusicSection";
 import LyricsSection from "@/components/LyricsSection";
 import SingAlongSection from "@/components/SingAlongSection";
@@ -16,7 +15,6 @@ const Index = () => {
       <main>
         <HeroSection />
         <AboutSection />
-        <PhotoAlbumSection />
         <MusicSection />
         <LyricsSection />
         <SingAlongSection />
