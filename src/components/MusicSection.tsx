@@ -13,25 +13,83 @@ interface Track {
 }
 
 const tracks: Track[] = [
-  // 2019
-  { id: "1", title: "Bouzayein Intro", year: "2019", type: "Single", thumbnail: "https://img.youtube.com/vi/YJtaIwt_vio/maxresdefault.jpg", youtubeId: "YJtaIwt_vio" },
-  { id: "2", title: "8 CHHOUR", year: "2019", type: "Single", thumbnail: "https://img.youtube.com/vi/3tqGXfQTlPE/maxresdefault.jpg", youtubeId: "3tqGXfQTlPE" },
-  // 2021
-  { id: "3", title: "Grow Up Freestyle", year: "2021", type: "Freestyle", thumbnail: "https://img.youtube.com/vi/DjzPd6bKJFI/maxresdefault.jpg", youtubeId: "DjzPd6bKJFI" },
-  // 2022
-  { id: "4", title: "Grow Up", year: "2022", type: "Album", thumbnail: "https://img.youtube.com/vi/5lgYb9wq7NQ/maxresdefault.jpg", youtubeId: "5lgYb9wq7NQ" },
-  { id: "5", title: "SBAYA", year: "2022", type: "Single", thumbnail: "https://img.youtube.com/vi/L5KhYYQbB4c/maxresdefault.jpg", youtubeId: "L5KhYYQbB4c" },
-  // 2023
-  { id: "6", title: "B3IDA", year: "2023", type: "Single", thumbnail: "https://img.youtube.com/vi/OCkJjN2ryjM/maxresdefault.jpg", youtubeId: "OCkJjN2ryjM" },
-  { id: "7", title: "NETFAKARNA SGHAR", year: "2023", type: "Single", thumbnail: "https://img.youtube.com/vi/ZNMHaKE_s44/maxresdefault.jpg", youtubeId: "ZNMHaKE_s44" },
-  { id: "8", title: "KBERNA", year: "2023", type: "Single", thumbnail: "https://img.youtube.com/vi/nKlU6I7mVzs/maxresdefault.jpg", youtubeId: "nKlU6I7mVzs" },
-  // 2024
-  { id: "9", title: "FEELINGS", year: "2024", type: "EP", thumbnail: "https://img.youtube.com/vi/iD4ab4BncRc/maxresdefault.jpg", youtubeId: "iD4ab4BncRc" },
-  { id: "10", title: "TOXIC", year: "2024", type: "Single", thumbnail: "https://img.youtube.com/vi/Vq4J3QJRJ6k/maxresdefault.jpg", youtubeId: "Vq4J3QJRJ6k" },
-  // 2025
-  { id: "11", title: "Mode Avion", year: "2025", type: "Single", thumbnail: "https://img.youtube.com/vi/j8vP7QfKLsM/maxresdefault.jpg", youtubeId: "j8vP7QfKLsM" },
-];
+  // 2019 (Bouzayein album tracks)
+  { id: "1", title: "Bouzayein (Intro)", year: "2019", type: "Album", thumbnail: "https://img.youtube.com/vi/kfMIY8vRdDs/maxresdefault.jpg", youtubeId: "kfMIY8vRdDs" },
+  { id: "2", title: "Démission", year: "2019", type: "Album", thumbnail: "https://img.youtube.com/vi/qrOR36FGO_Q/maxresdefault.jpg", youtubeId: "qrOR36FGO_Q" },
+  { id: "3", title: "BTITE", year: "2019", type: "Album", thumbnail: "https://img.youtube.com/vi/beV3Rek3y2o/maxresdefault.jpg", youtubeId: "beV3Rek3y2o" },
+  { id: "4", title: "FOUNDOU", year: "2019", type: "Album", thumbnail: "https://img.youtube.com/vi/9YBD2cLnBbk/maxresdefault.jpg", youtubeId: "9YBD2cLnBbk" },
+  { id: "5", title: "Mchew", year: "2019", type: "Album", thumbnail: "https://img.youtube.com/vi/YJtaIwt_vio/maxresdefault.jpg", youtubeId: "YJtaIwt_vio" },
+  { id: "6", title: "WA9TI", year: "2019", type: "Album", thumbnail: "https://img.youtube.com/vi/HtAYFJw4QjQ/maxresdefault.jpg", youtubeId: "HtAYFJw4QjQ" },
+  { id: "7", title: "BAKAW SAMIR (feat. TESSTESS)", year: "2019", type: "Album", thumbnail: "https://img.youtube.com/vi/-hI1KVTmwNg/maxresdefault.jpg", youtubeId: "-hI1KVTmwNg" },
+  { id: "8", title: "8 CHHOUR", year: "2019", type: "Album", thumbnail: "https://img.youtube.com/vi/ExnCRft0Xf4/maxresdefault.jpg", youtubeId: "ExnCRft0Xf4" },
 
+  // 2020 (Singles)
+  { id: "9", title: "Yezzi", year: "2020", type: "Single", thumbnail: "https://img.youtube.com/vi/Ads4crj9Td0/maxresdefault.jpg", youtubeId: "Ads4crj9Td0" },
+  { id: "10", title: "SKYFALL (feat. KASO)", year: "2020", type: "Single", thumbnail: "https://img.youtube.com/vi/FXs3QcE_x9g/maxresdefault.jpg", youtubeId: "FXs3QcE_x9g" },
+  { id: "11", title: "Rich (feat. A.L.A & El Castro)", year: "2020", type: "Single", thumbnail: "https://img.youtube.com/vi/PwS3jCIYikg/maxresdefault.jpg", youtubeId: "PwS3jCIYikg" },
+  { id: "12", title: "Mchit", year: "2020", type: "Single", thumbnail: "https://img.youtube.com/vi/fiai-R5uC-8/maxresdefault.jpg", youtubeId: "fiai-R5uC-8" },
+  { id: "13", title: "Mchit (Remix)", year: "2020", type: "Single", thumbnail: "https://img.youtube.com/vi/OQmm6a1P_CM/maxresdefault.jpg", youtubeId: "OQmm6a1P_CM" },
+  { id: "14", title: "Yamma", year: "2020", type: "Single", thumbnail: "https://img.youtube.com/vi/8Nr-cdMPlxU/maxresdefault.jpg", youtubeId: "8Nr-cdMPlxU" },
+  { id: "15", title: "Rich (Remix)", year: "2020", type: "Single", thumbnail: "https://img.youtube.com/vi/JQlHMvVCdK8/maxresdefault.jpg", youtubeId: "JQlHMvVCdK8" },
+  { id: "16", title: "Kberna", year: "2020", type: "Single", thumbnail: "https://img.youtube.com/vi/1aqck_4NCbw/maxresdefault.jpg", youtubeId: "1aqck_4NCbw" },
+  { id: "17", title: "Yezzi (Remix)", year: "2020", type: "Single", thumbnail: "https://img.youtube.com/vi/gygpVjKBtdw/maxresdefault.jpg", youtubeId: "gygpVjKBtdw" },
+  { id: "18", title: "Yamma (Remix)", year: "2020", type: "Single", thumbnail: "https://img.youtube.com/vi/2_WlQlCzyB4/maxresdefault.jpg", youtubeId: "2_WlQlCzyB4" },
+  { id: "19", title: "Kberna (Remix)", year: "2020", type: "Single", thumbnail: "https://img.youtube.com/vi/_sHZEoVXTKE/maxresdefault.jpg", youtubeId: "_sHZEoVXTKE" },
+
+  // 2021 (Singles & Freestyles)
+  { id: "20", title: "NETFAKARNA SGHAR", year: "2021", type: "Single", thumbnail: "https://img.youtube.com/vi/gLSDweTDQTI/maxresdefault.jpg", youtubeId: "gLSDweTDQTI" },
+  { id: "21", title: "Yamma", year: "2021", type: "Single", thumbnail: "https://img.youtube.com/vi/gcquQsoVV58/maxresdefault.jpg", youtubeId: "gcquQsoVV58" },
+  { id: "22", title: "Rich (feat. A.L.A & El Castro)", year: "2021", type: "Single", thumbnail: "https://img.youtube.com/vi/P0aTafNpyDY/maxresdefault.jpg", youtubeId: "P0aTafNpyDY" },
+  { id: "23", title: "Grow Up Freestyle", year: "2021", type: "Freestyle", thumbnail: "https://img.youtube.com/vi/8kZnEoMVpXQ/maxresdefault.jpg", youtubeId: "8kZnEoMVpXQ" },
+  { id: "24", title: "Kberna", year: "2021", type: "Single", thumbnail: "https://img.youtube.com/vi/XCJNHUDpt_g/maxresdefault.jpg", youtubeId: "XCJNHUDpt_g" },
+  { id: "25", title: "Yezzi", year: "2021", type: "Single", thumbnail: "https://img.youtube.com/vi/-eaibsloPCc/maxresdefault.jpg", youtubeId: "-eaibsloPCc" },
+  { id: "26", title: "B3IDA", year: "2021", type: "Single", thumbnail: "https://img.youtube.com/vi/OCkJjN2ryjM/maxresdefault.jpg", youtubeId: "OCkJjN2ryjM" },
+  { id: "27", title: "NETFAKARNA SGHAR (Remix)", year: "2021", type: "Single", thumbnail: "https://img.youtube.com/vi/6aD-xLATpms/maxresdefault.jpg", youtubeId: "6aD-xLATpms" },
+
+  // 2022 (Grow Up album + singles)
+  { id: "28", title: "Grow Up", year: "2022", type: "Album", thumbnail: "https://img.youtube.com/vi/d3gHaWQMIt4/maxresdefault.jpg", youtubeId: "d3gHaWQMIt4" },
+  { id: "29", title: "Dhaya3", year: "2022", type: "Single", thumbnail: "https://img.youtube.com/vi/4jg2R769PXo/maxresdefault.jpg", youtubeId: "4jg2R769PXo" },
+  { id: "30", title: "KI NKHAMMEM FIK", year: "2022", type: "Single", thumbnail: "https://img.youtube.com/vi/_4LpNAoa6JY/maxresdefault.jpg", youtubeId: "_4LpNAoa6JY" },
+  { id: "31", title: "SBAYA", year: "2022", type: "Single", thumbnail: "https://img.youtube.com/vi/ENeGlWLu1H0/maxresdefault.jpg", youtubeId: "ENeGlWLu1H0" },
+  { id: "32", title: "Mchit", year: "2022", type: "Single", thumbnail: "https://img.youtube.com/vi/DwL6pw3s_bI/maxresdefault.jpg", youtubeId: "DwL6pw3s_bI" },
+  { id: "33", title: "Kberna", year: "2022", type: "Single", thumbnail: "https://img.youtube.com/vi/nk95MwQybJU/maxresdefault.jpg", youtubeId: "nk95MwQybJU" },
+  { id: "34", title: "Yamma", year: "2022", type: "Single", thumbnail: "https://img.youtube.com/vi/DpuBTsxnZaM/maxresdefault.jpg", youtubeId: "DpuBTsxnZaM" },
+  { id: "35", title: "Rich", year: "2022", type: "Single", thumbnail: "https://img.youtube.com/vi/3uwurfC8nIE/maxresdefault.jpg", youtubeId: "3uwurfC8nIE" },
+  { id: "36", title: "Yezzi", year: "2022", type: "Single", thumbnail: "https://img.youtube.com/vi/l3zxDnxgqB0/maxresdefault.jpg", youtubeId: "l3zxDnxgqB0" },
+  { id: "37", title: "NETFAKARNA SGHAR", year: "2022", type: "Single", thumbnail: "https://img.youtube.com/vi/ZNMHaKE_s44/maxresdefault.jpg", youtubeId: "ZNMHaKE_s44" },
+  { id: "38", title: "KBERNA", year: "2022", type: "Single", thumbnail: "https://img.youtube.com/vi/Vq59mtskGiM/maxresdefault.jpg", youtubeId: "Vq59mtskGiM" },
+
+  // 2023 (Singles)
+  { id: "39", title: "SADA9THA", year: "2023", type: "Single", thumbnail: "https://img.youtube.com/vi/aGZ6k8rQJVQ/maxresdefault.jpg", youtubeId: "aGZ6k8rQJVQ" },
+  { id: "40", title: "Ta3bouni", year: "2023", type: "Single", thumbnail: "https://img.youtube.com/vi/_tDB534_lf4/maxresdefault.jpg", youtubeId: "_tDB534_lf4" },
+  { id: "41", title: "Menghir Sbab", year: "2023", type: "Single", thumbnail: "https://img.youtube.com/vi/kv_97RYh1PY/maxresdefault.jpg", youtubeId: "kv_97RYh1PY" },
+  { id: "42", title: "RMIT WRAYA", year: "2023", type: "Single", thumbnail: "https://img.youtube.com/vi/rxkteUJhLKs/maxresdefault.jpg", youtubeId: "rxkteUJhLKs" },
+  { id: "43", title: "Ghalet", year: "2023", type: "Single", thumbnail: "https://img.youtube.com/vi/4Ygu___c0dA/maxresdefault.jpg", youtubeId: "4Ygu___c0dA" },
+  { id: "44", title: "Tranquille", year: "2023", type: "Single", thumbnail: "https://img.youtube.com/vi/rd-KaLtILCs/maxresdefault.jpg", youtubeId: "rd-KaLtILCs" },
+  { id: "45", title: "Akhtana No", year: "2023", type: "Single", thumbnail: "https://img.youtube.com/vi/qfkCxRSTBts/maxresdefault.jpg", youtubeId: "qfkCxRSTBts" },
+
+  // 2024 (FEELINGS EP + singles)
+  { id: "46", title: "MESSYEBA (Intro)", year: "2024", type: "EP", thumbnail: "https://img.youtube.com/vi/glL4e1BZscM/maxresdefault.jpg", youtubeId: "glL4e1BZscM" },
+  { id: "47", title: "KONT NKHAF 3LIK MEN NAAR", year: "2024", type: "EP", thumbnail: "https://img.youtube.com/vi/wk56oRtu9D0/maxresdefault.jpg", youtubeId: "wk56oRtu9D0" },
+  { id: "48", title: "MEZELT SGHIR", year: "2024", type: "EP", thumbnail: "https://img.youtube.com/vi/0zTv0G82Yp8/maxresdefault.jpg", youtubeId: "0zTv0G82Yp8" },
+  { id: "49", title: "9RIBA", year: "2024", type: "EP", thumbnail: "https://img.youtube.com/vi/-w8Y-8xzBho/maxresdefault.jpg", youtubeId: "-w8Y-8xzBho" },
+  { id: "50", title: "NE7LEF", year: "2024", type: "EP", thumbnail: "https://img.youtube.com/vi/HXawfpVtX6U/maxresdefault.jpg", youtubeId: "HXawfpVtX6U" },
+  { id: "51", title: "Wfet", year: "2024", type: "EP", thumbnail: "https://img.youtube.com/vi/r-oL8Y0PYD0/maxresdefault.jpg", youtubeId: "r-oL8Y0PYD0" },
+  { id: "52", title: "TOXIC", year: "2024", type: "Single", thumbnail: "https://img.youtube.com/vi/NYzANnfqmOw/maxresdefault.jpg", youtubeId: "NYzANnfqmOw" },
+  { id: "53", title: "Ya Baba", year: "2024", type: "Single", thumbnail: "https://img.youtube.com/vi/PvQCte31VYE/maxresdefault.jpg", youtubeId: "PvQCte31VYE" },
+  { id: "54", title: "Ghalet", year: "2024", type: "Single", thumbnail: "https://img.youtube.com/vi/Y-fe2kpe-hU/maxresdefault.jpg", youtubeId: "Y-fe2kpe-hU" },
+  { id: "55", title: "FEELINGS (Full Film)", year: "2024", type: "EP", thumbnail: "https://img.youtube.com/vi/iD4ab4BncRc/maxresdefault.jpg", youtubeId: "iD4ab4BncRc" },
+
+  // 2025 (Mode Avion album + singles)
+  { id: "56", title: "Anseni", year: "2025", type: "Single", thumbnail: "https://img.youtube.com/vi/NqU0c8pmIO0/maxresdefault.jpg", youtubeId: "NqU0c8pmIO0" },
+  { id: "57", title: "3adit", year: "2025", type: "Single", thumbnail: "https://img.youtube.com/vi/aZ_Cpfe_9aw/maxresdefault.jpg", youtubeId: "aZ_Cpfe_9aw" },
+  { id: "58", title: "Thanna", year: "2025", type: "Single", thumbnail: "https://img.youtube.com/vi/tZlig8B485U/maxresdefault.jpg", youtubeId: "tZlig8B485U" },
+  { id: "59", title: "Autoroute", year: "2025", type: "Single", thumbnail: "https://img.youtube.com/vi/COdrRin8DCU/maxresdefault.jpg", youtubeId: "COdrRin8DCU" },
+  { id: "60", title: "Mabghitch", year: "2025", type: "Single", thumbnail: "https://img.youtube.com/vi/5AvVv5AProE/maxresdefault.jpg", youtubeId: "5AvVv5AProE" },
+  { id: "61", title: "Ya Baba", year: "2025", type: "Single", thumbnail: "https://img.youtube.com/vi/150BYTHxbyY/maxresdefault.jpg", youtubeId: "150BYTHxbyY" },
+  { id: "62", title: "Ghalet", year: "2025", type: "Single", thumbnail: "https://img.youtube.com/vi/p7vqVi7v2eU/maxresdefault.jpg", youtubeId: "p7vqVi7v2eU" },
+  { id: "63", title: "Mode Avion (Full Album)", year: "2025", type: "Album", thumbnail: "https://img.youtube.com/vi/zZ7ulF-HZ0M/maxresdefault.jpg", youtubeId: "zZ7ulF-HZ0M" },
+];
 const years = ["2019", "2021", "2022", "2023", "2024", "2025"];
 const types: TrackType[] = ["Single", "Album", "EP", "Freestyle"];
 
