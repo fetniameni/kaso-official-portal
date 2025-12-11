@@ -18,7 +18,6 @@ const Index = () => {
       <main>
         <HeroSection />
         <AboutSection />
-        <TeamSection />
         <BouzairiesSection />
         <PhotoAlbumSection />
         <LastEventSection />
@@ -26,6 +25,7 @@ const Index = () => {
         <LyricsSection />
         <SingAlongSection />
         <ComingSoonSection />
+        <TeamSection />
         <ContactSection />
       </main>
     </div>

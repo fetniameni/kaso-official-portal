@@ -37,12 +37,10 @@ const TeamSection = () => {
   return (
     <section id="team" className="py-20 md:py-32 bg-background">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-4">
+        <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-4 ltr-text">
           Bouzayen Family & Team
         </h2>
-        <p className="text-center text-muted-foreground mb-12">
-          The people behind the movement
-        </p>
+        <div className="w-24 h-1 bg-primary mx-auto mb-12" />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
           {teamMembers.map((member, index) => (
