@@ -110,8 +110,8 @@ const HeroSection = () => {
         </div>
 
         {/* Tagline */}
-        <h1 dir="ltr" className="text-2xl md:text-4xl lg:text-[42px] font-bold text-foreground leading-relaxed mb-10 animate-fade-up opacity-0 animation-delay-200 text-center">
-          كازو: صوت الشوارع اللي يهزّ القلوب بكلمات من الواقع
+        <h1 dir="ltr" className="text-2xl md:text-4xl lg:text-[42px] font-bold text-foreground leading-relaxed mb-10 animate-fade-up opacity-0 animation-delay-200 text-center font-mono">
+          يحكي قصتك قبل ما تكتبها
         </h1>
 
         {/* Play Button */}
