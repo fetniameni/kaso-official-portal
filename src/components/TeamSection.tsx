@@ -61,8 +61,7 @@ const TeamSection = () => {
                 </div>
 
                 {/* Info */}
-                <h3 className="font-bold text-foreground mb-1">{member.name}</h3>
-                <p className="text-sm text-muted-foreground mb-4">{member.role}</p>
+                <h3 className="font-bold text-foreground mb-4">{member.name}</h3>
 
                 {/* Instagram Icon */}
                 <div className="flex items-center justify-center gap-2 text-primary opacity-70 group-hover:opacity-100 transition-opacity">
