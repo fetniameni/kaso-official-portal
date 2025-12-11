@@ -1,4 +1,4 @@
-import { Instagram, Facebook, Youtube, Twitter } from "lucide-react";
+import { Instagram, Facebook, Youtube, Twitter, ExternalLink } from "lucide-react";
 
 const socialLinks = [
   {
@@ -113,6 +113,23 @@ const ContactSection = () => {
               </span>
             </a>
           ))}
+        </div>
+
+        {/* Bouzairies Exclusive */}
+        <div className="text-center mb-16">
+          <p className="text-muted-foreground mb-6">
+            Behind the scenes, exclusive news & more
+          </p>
+          <a 
+            href="https://www.instagram.com/bouzairies" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="inline-flex items-center gap-3 bg-primary hover:bg-primary-hover text-primary-foreground px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_hsl(var(--primary)/0.5)]"
+          >
+            <Instagram className="w-6 h-6" />
+            Follow @bouzairies
+            <ExternalLink className="w-5 h-5" />
+          </a>
         </div>
 
         {/* Music Platforms */}
