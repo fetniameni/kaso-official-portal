@@ -19,8 +19,8 @@ const Index = () => {
         <LyricsSection />
         <SingAlongSection />
         <ComingSoonSection />
-        <TeamSection />
         <ContactSection />
+        <TeamSection />
       </main>
     </div>
   );
