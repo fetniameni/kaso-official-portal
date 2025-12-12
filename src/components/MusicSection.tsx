@@ -36,7 +36,7 @@ const tracks: Track[] = [
   { id: "18", title: "Kont Ghalet", year: "2020", type: "Single", thumbnail: "https://img.youtube.com/vi/2_WlQlCzyB4/maxresdefault.jpg", youtubeId: "2_WlQlCzyB4" },
   { id: "19", title: "TRANQUILLE", year: "2020", type: "Single", thumbnail: "https://img.youtube.com/vi/_sHZEoVXTKE/maxresdefault.jpg", youtubeId: "_sHZEoVXTKE" },
 
-  // 2021 
+  // 2021 (Grow Up album + single + freestyle)
   { id: "20", title: "BIG STEP (GROW UP ALBUM)", year: "2021", type: "Single", thumbnail: "https://img.youtube.com/vi/gLSDweTDQTI/maxresdefault.jpg", youtubeId: "gLSDweTDQTI" },
   { id: "21", title: "GROW UP FREESTYLE", year: "2021", type: "Freestyle", thumbnail: "https://img.youtube.com/vi/gcquQsoVV58/maxresdefault.jpg", youtubeId: "gcquQsoVV58" },
   { id: "22", title: "MELLI SGHIR (INTRO)", year: "2021", type: "Album", thumbnail: "https://img.youtube.com/vi/P0aTafNpyDY/maxresdefault.jpg", youtubeId: "P0aTafNpyDY" },
@@ -46,7 +46,7 @@ const tracks: Track[] = [
   { id: "26", title: "B3IDA", year: "2021", type: "Album", thumbnail: "https://img.youtube.com/vi/OCkJjN2ryjM/maxresdefault.jpg", youtubeId: "OCkJjN2ryjM" },
   { id: "27", title: "MAFEHMOUNICH", year: "2021", type: "Album", thumbnail: "https://img.youtube.com/vi/6aD-xLATpms/maxresdefault.jpg", youtubeId: "6aD-xLATpms" },
 
-  // 2022 (Grow Up album + singles)
+  // 2022 (Grow Up album + singles + freestyle)
   { id: "28", title: "FREESTYLE #4", year: "2022", type: "Freestyle", thumbnail: "https://img.youtube.com/vi/d3gHaWQMIt4/maxresdefault.jpg", youtubeId: "d3gHaWQMIt4" },
   { id: "29", title: "T7arrek 9oum", year: "2022", type: "Album", thumbnail: "https://img.youtube.com/vi/4jg2R769PXo/maxresdefault.jpg", youtubeId: "4jg2R769PXo" },
   { id: "30", title: "Modda ", year: "2022", type: "Album", thumbnail: "https://img.youtube.com/vi/_4LpNAoa6JY/maxresdefault.jpg", youtubeId: "_4LpNAoa6JY" },
@@ -80,15 +80,15 @@ const tracks: Track[] = [
   { id: "54", title: "DIMA", year: "2024", type: "Single", thumbnail: "https://img.youtube.com/vi/Y-fe2kpe-hU/maxresdefault.jpg", youtubeId: "Y-fe2kpe-hU" },
   { id: "55", title: "FEELINGS (Full movie)", year: "2024", type: "EP", thumbnail: "https://img.youtube.com/vi/iD4ab4BncRc/maxresdefault.jpg", youtubeId: "iD4ab4BncRc" },
 
-  // 2025 (Mode Avion album + singles)
-  { id: "56", title: "THANNA", year: "2025", type: "Album", thumbnail: "https://img.youtube.com/vi/NqU0c8pmIO0/hqdefault.jpg", youtubeId: "NqU0c8pmIO0" },
-  { id: "57", title: "EL BO3ED", year: "2025", type: "Album", thumbnail: "https://img.youtube.com/vi/aZ_Cpfe_9aw/maxresdefault.jpg", youtubeId: "aZ_Cpfe_9aw" },
-  { id: "58", title: "AUTOROUTE", year: "2025", type: "Album", thumbnail: "https://img.youtube.com/vi/tZlig8B485U/maxresdefault.jpg", youtubeId: "tZlig8B485U" },
-  { id: "59", title: "MEN BARRA", year: "2025", type: "Album", thumbnail: "https://img.youtube.com/vi/COdrRin8DCU/maxresdefault.jpg", youtubeId: "COdrRin8DCU" },
-  { id: "60", title: "LOUMNI", year: "2025", type: "Album", thumbnail: "https://img.youtube.com/vi/5AvVv5AProE/maxresdefault.jpg", youtubeId: "5AvVv5AProE" },
-  { id: "61", title: "ENNARD", year: "2025", type: "Single", thumbnail: "https://img.youtube.com/vi/150BYTHxbyY/maxresdefault.jpg", youtubeId: "150BYTHxbyY" },
+  // 2025 (Mode Avion EP+ singles)
+  { id: "56", title: "THANNA", year: "2025", type: "EP", thumbnail: "https://img.youtube.com/vi/NqU0c8pmIO0/hqdefault.jpg", youtubeId: "NqU0c8pmIO0" },
+  { id: "57", title: "EL BO3ED", year: "2025", type: "EP", thumbnail: "https://img.youtube.com/vi/aZ_Cpfe_9aw/maxresdefault.jpg", youtubeId: "aZ_Cpfe_9aw" },
+  { id: "58", title: "AUTOROUTE", year: "2025", type: "EP", thumbnail: "https://img.youtube.com/vi/tZlig8B485U/maxresdefault.jpg", youtubeId: "tZlig8B485U" },
+  { id: "59", title: "MEN BARRA", year: "2025", type: "EP", thumbnail: "https://img.youtube.com/vi/COdrRin8DCU/maxresdefault.jpg", youtubeId: "COdrRin8DCU" },
+  { id: "60", title: "LOUMNI", year: "2025", type: "EP", thumbnail: "https://img.youtube.com/vi/5AvVv5AProE/maxresdefault.jpg", youtubeId: "5AvVv5AProE" },
+  { id: "61", title: "ENNARD", year: "2025", type: "EP", thumbnail: "https://img.youtube.com/vi/150BYTHxbyY/maxresdefault.jpg", youtubeId: "150BYTHxbyY" },
   { id: "62", title: "Ghalet", year: "2025", type: "Single", thumbnail: "https://img.youtube.com/vi/p7vqVi7v2eU/maxresdefault.jpg", youtubeId: "p7vqVi7v2eU" },
-  { id: "63", title: " Ya Baba", year: "2025", type: "Album", thumbnail: "https://img.youtube.com/vi/zZ7ulF-HZ0M/maxresdefault.jpg", youtubeId: "zZ7ulF-HZ0M" },
+  { id: "63", title: " Ya Baba", year: "2025", type: "Single", thumbnail: "https://img.youtube.com/vi/zZ7ulF-HZ0M/maxresdefault.jpg", youtubeId: "zZ7ulF-HZ0M" },
 ];
 const years = ["2019", "2020", "2021", "2022", "2023", "2024", "2025"];
 const types: TrackType[] = ["Single", "Album", "EP", "Freestyle"];
