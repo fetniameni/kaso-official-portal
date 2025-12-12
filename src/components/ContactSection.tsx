@@ -114,15 +114,11 @@ const ContactSection = () => {
       {/* Footer */}
       <footer className="border-t border-border/50 pt-8">
         <div className="container mx-auto px-4 text-center">
-          <p className="rtl-text text-muted-foreground">Copyright © 2025 All Rights Reserved by Kaso</p>
+          <p className="rtl-text text-muted-foreground">Copyright © 2026 KASO. All Rights Reserved.</p>
           <p className="rtl-text text-sm text-muted-foreground/60 mt-2">
               🧡 ​Designed by AmeNy
           </p>
-          <img 
-            src="/assets/ameny-logo.png" 
-            alt="AmeNy Logo" 
-            className="mx-auto mt-4 h-32 w-auto opacity-80 hover:opacity-100 transition-opacity"
-          />
+          <img src="/assets/ameny-logo.png" alt="AmeNy Logo" className="mx-auto mt-4 h-32 w-auto opacity-80 hover:opacity-100 transition-opacity" />
         </div>
       </footer>
     </section>;
