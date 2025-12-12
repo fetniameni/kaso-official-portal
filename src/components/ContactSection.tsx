@@ -118,6 +118,11 @@ const ContactSection = () => {
           <p className="rtl-text text-sm text-muted-foreground/60 mt-2">
               🧡 ​Designed by AmeNy
           </p>
+          <img 
+            src="/assets/ameny-logo.png" 
+            alt="AmeNy Logo" 
+            className="mx-auto mt-4 h-16 w-auto opacity-80 hover:opacity-100 transition-opacity"
+          />
         </div>
       </footer>
     </section>;
