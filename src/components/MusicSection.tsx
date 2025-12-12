@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Play, X, ChevronLeft } from "lucide-react";
+import { Play, X } from "lucide-react";
 
 type TrackType = "Single" | "Album" | "EP" | "Freestyle";
 
@@ -122,15 +122,7 @@ const MusicSection = () => {
 
   const handleYearClick = (year: string) => {
     setSelectedYear(year);
-    setSelectedType(null);
-  };
-
-  const handleBack = () => {
-    if (selectedType) {
-      setSelectedType(null);
-    } else {
-      setSelectedYear(null);
-    }
+    setSelectedType("All");
   };
 
   return (
@@ -142,42 +134,30 @@ const MusicSection = () => {
         </h2>
         <div className="w-24 h-1 bg-primary mx-auto mb-12" />
 
-        {/* Back Button */}
-        {selectedYear && (
-          <button
-            onClick={handleBack}
-            className="flex items-center gap-2 text-primary hover:text-primary-hover mb-6 transition-colors"
-          >
-            <ChevronLeft className="w-5 h-5" />
-            <span className="font-medium">Back</span>
-          </button>
-        )}
-
-        {/* Step 1: Year Selection */}
-        {!selectedYear && (
-          <div className="text-center">
-            <p className="text-muted-foreground mb-6 text-lg">Select a year to explore</p>
-            <div className="flex justify-center flex-wrap gap-3 md:gap-4">
-              {years.map((year) => (
-                <button
-                  key={year}
-                  onClick={() => handleYearClick(year)}
-                  className="w-14 h-14 md:w-[60px] md:h-[60px] rounded-full font-bold text-sm bg-primary text-primary-foreground transition-all duration-300 hover:scale-110 hover:shadow-[0_0_25px_hsl(var(--primary)/0.6)] flex-shrink-0"
-                >
-                  {year}
-                </button>
-              ))}
-            </div>
+        {/* Year Filter - Always Visible */}
+        <div className="text-center mb-8">
+          <p className="text-muted-foreground mb-6 text-lg">Select a year to explore</p>
+          <div className="flex justify-center flex-wrap gap-3 md:gap-4">
+            {years.map((year) => (
+              <button
+                key={year}
+                onClick={() => handleYearClick(year)}
+                className={`w-14 h-14 md:w-[60px] md:h-[60px] rounded-full font-bold text-sm transition-all duration-300 hover:scale-110 flex-shrink-0
+                  ${selectedYear === year
+                    ? "bg-primary-hover text-primary-foreground shadow-[0_0_25px_hsl(var(--primary)/0.6)] scale-105"
+                    : "bg-primary text-primary-foreground hover:shadow-[0_0_25px_hsl(var(--primary)/0.6)]"
+                  }`}
+              >
+                {year}
+              </button>
+            ))}
           </div>
-        )}
+        </div>
 
-        {/* Step 2: Type Selection */}
+        {/* Type Filter - Shows after year selected */}
         {selectedYear && (
-          <div className="text-center animate-fade-in">
-            <p className="text-muted-foreground mb-2 text-lg">
-              <span className="text-primary font-bold">{selectedYear}</span> – {selectedType ? `Showing ${selectedType === "All" ? "all tracks" : selectedType}` : "Select type"}
-            </p>
-            <div className="flex justify-center flex-wrap gap-3 md:gap-4 mt-6 mb-8">
+          <div className="text-center animate-fade-in mb-8">
+            <div className="flex justify-center flex-wrap gap-3 md:gap-4">
               {/* All Button */}
               <button
                 onClick={() => setSelectedType("All")}
@@ -212,14 +192,9 @@ const MusicSection = () => {
           </div>
         )}
 
-        {/* Step 3: Songs Grid */}
+        {/* Songs Grid */}
         {selectedYear && selectedType && (
           <div className="animate-fade-in">
-            <p className="text-center text-muted-foreground mb-8 text-lg">
-              <span className="text-primary font-bold">{selectedYear}</span>
-              <span className="mx-2">•</span>
-              <span className="text-primary font-bold">{selectedType}</span>
-            </p>
 
             {filteredTracks.length > 0 ? (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
