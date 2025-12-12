@@ -121,7 +121,7 @@ const ContactSection = () => {
           <img 
             src="/assets/ameny-logo.png" 
             alt="AmeNy Logo" 
-            className="mx-auto mt-4 h-16 w-auto opacity-80 hover:opacity-100 transition-opacity"
+            className="mx-auto mt-4 h-32 w-auto opacity-80 hover:opacity-100 transition-opacity"
           />
         </div>
       </footer>
