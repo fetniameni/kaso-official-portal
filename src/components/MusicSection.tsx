@@ -16,7 +16,7 @@ const tracks: Track[] = [
   // 2019 
   { id: "1", title: "Yezzi", year: "2019", type: "Single", thumbnail: "https://img.youtube.com/vi/kfMIY8vRdDs/maxresdefault.jpg", youtubeId: "kfMIY8vRdDs" },
   { id: "2", title: "ALLO BABA", year: "2019", type: "Single", thumbnail: "https://img.youtube.com/vi/qrOR36FGO_Q/maxresdefault.jpg", youtubeId: "qrOR36FGO_Q" },
-  { id: "3", title: "FREESTYLE #1", year: "2019", type: "Freestyle", thumbnail: "https://img.youtube.com/vi/beV3Rek3y2o/maxresdefault.jpg", youtubeId: "beV3Rek3y2o" },
+  { id: "3", title: "FREESTYLE #1", year: "2019", type: "Freestyle", thumbnail: "https://img.youtube.com/vi/beV3Rek3y2o/hqdefault.jpg", youtubeId: "beV3Rek3y2o" },
   { id: "4", title: "FREESTYLE #2", year: "2019", type: "Freestyle", thumbnail: "https://img.youtube.com/vi/9YBD2cLnBbk/maxresdefault.jpg", youtubeId: "9YBD2cLnBbk" },
   { id: "5", title: "BOUZAYEIN ( INTRO )", year: "2019", type: "EP", thumbnail: "https://img.youtube.com/vi/YJtaIwt_vio/maxresdefault.jpg", youtubeId: "YJtaIwt_vio" },
   { id: "6", title: "8 CHHOUR", year: "2019", type: "EP", thumbnail: "https://img.youtube.com/vi/HtAYFJw4QjQ/maxresdefault.jpg", youtubeId: "HtAYFJw4QjQ" },
