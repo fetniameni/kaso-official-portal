@@ -90,7 +90,7 @@ const tracks: Track[] = [
   { id: "62", title: "Ghalet", year: "2025", type: "Single", thumbnail: "https://img.youtube.com/vi/p7vqVi7v2eU/maxresdefault.jpg", youtubeId: "p7vqVi7v2eU" },
   { id: "63", title: " Ya Baba", year: "2025", type: "Album", thumbnail: "https://img.youtube.com/vi/zZ7ulF-HZ0M/maxresdefault.jpg", youtubeId: "zZ7ulF-HZ0M" },
 ];
-const years = ["2019", "2021", "2022", "2023", "2024", "2025"];
+const years = ["2019", "2020", "2021", "2022", "2023", "2024", "2025"];
 const types: TrackType[] = ["Single", "Album", "EP", "Freestyle"];
 
 const MusicSection = () => {
