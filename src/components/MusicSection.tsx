@@ -96,7 +96,7 @@ const types: TrackType[] = ["Single", "Album", "EP", "Freestyle"];
 const MusicSection = () => {
   const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
   const [selectedYear, setSelectedYear] = useState<string | null>(null);
-  const [selectedType, setSelectedType] = useState<TrackType | null>(null);
+  const [selectedType, setSelectedType] = useState<TrackType | "All" | null>(null);
 
   // Get available types for the selected year
   const availableTypes = selectedYear
@@ -105,7 +105,9 @@ const MusicSection = () => {
 
   // Filter tracks based on selections
   const filteredTracks = selectedYear && selectedType
-    ? tracks.filter(track => track.year === selectedYear && track.type === selectedType)
+    ? selectedType === "All"
+      ? tracks.filter(track => track.year === selectedYear)
+      : tracks.filter(track => track.year === selectedYear && track.type === selectedType)
     : [];
 
   const openModal = (youtubeId: string) => {
@@ -170,12 +172,23 @@ const MusicSection = () => {
         )}
 
         {/* Step 2: Type Selection */}
-        {selectedYear && !selectedType && (
+        {selectedYear && (
           <div className="text-center animate-fade-in">
             <p className="text-muted-foreground mb-2 text-lg">
-              <span className="text-primary font-bold">{selectedYear}</span> – Select type
+              <span className="text-primary font-bold">{selectedYear}</span> – {selectedType ? `Showing ${selectedType === "All" ? "all tracks" : selectedType}` : "Select type"}
             </p>
-            <div className="flex justify-center flex-wrap gap-3 md:gap-4 mt-6">
+            <div className="flex justify-center flex-wrap gap-3 md:gap-4 mt-6 mb-8">
+              {/* All Button */}
+              <button
+                onClick={() => setSelectedType("All")}
+                className={`px-6 py-3 rounded-full font-bold text-sm transition-all duration-300 flex-shrink-0
+                  ${selectedType === "All"
+                    ? "bg-primary-hover text-primary-foreground shadow-[0_0_25px_hsl(var(--primary)/0.6)] scale-105"
+                    : "bg-primary text-primary-foreground hover:scale-110 hover:shadow-[0_0_25px_hsl(var(--primary)/0.6)]"
+                  }`}
+              >
+                All
+              </button>
               {types.map((type) => {
                 const isAvailable = availableTypes.includes(type);
                 return (
@@ -184,9 +197,11 @@ const MusicSection = () => {
                     onClick={() => isAvailable && setSelectedType(type)}
                     disabled={!isAvailable}
                     className={`px-6 py-3 rounded-full font-bold text-sm transition-all duration-300 flex-shrink-0
-                      ${isAvailable
-                        ? "bg-primary text-primary-foreground hover:scale-110 hover:shadow-[0_0_25px_hsl(var(--primary)/0.6)]"
-                        : "bg-muted text-muted-foreground cursor-not-allowed opacity-50"
+                      ${selectedType === type
+                        ? "bg-primary-hover text-primary-foreground shadow-[0_0_25px_hsl(var(--primary)/0.6)] scale-105"
+                        : isAvailable
+                          ? "bg-primary text-primary-foreground hover:scale-110 hover:shadow-[0_0_25px_hsl(var(--primary)/0.6)]"
+                          : "bg-muted text-muted-foreground cursor-not-allowed opacity-50"
                       }`}
                   >
                     {type}
